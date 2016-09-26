@@ -1,0 +1,88 @@
+#block-views-how-to-earn-credit-block{
+  .block__title {
+    color: $color-1;
+    font-family: $header-font;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin: 20px 0;
+    text-align: center;
+
+    @include breakpoint (800px, true) {
+      font-size: 3em;
+    }
+  }
+}
+
+#block-views-how-to-earn-credit-block-1 {
+  .block__title {
+    color: $color-1;
+    font-family: $header-font;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin: 20px 0;
+  }
+}
+.view-how-to-earn-credit.view-display-id-block {
+
+  .view-content {
+    text-align: center;
+
+    @include breakpoint(800px, true) {
+      display: flex;
+      justify-content: center;
+    }
+    .views-row {
+      @include breakpoint(800px, true) {
+        width: 19%;
+      }
+    }
+  }
+  .views-field-title {
+
+    a {
+      background: $color-3;
+      color: $white;
+      display: block;
+      font-family: $header-font;
+      font-size: 2em;
+      padding: 10px;
+      text-transform: uppercase;
+
+      &:hover {
+        background: $color-1;
+      }
+
+      @include breakpoint(800px, true) {
+        font-size: 1.5em;
+        margin: 10px 2px;
+      }
+    }
+  }
+  .views-field-body {
+    font-weight: 300;
+    padding: 10px;
+  }
+}
+
+.view-how-to-earn-credit.view-display-id-block_1 {
+
+  .views-field-title {
+
+    a {
+      background: $color-3;
+      color: $white;
+      display: block;
+      font-family: $header-font;
+      font-size: 1.3em;
+      margin-bottom: 2px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+
+      &:hover {
+        background: $color-1;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+$color-1: #de462e;
+$color-2:#4796d6;
+$color-3: #de462e;
+$color-4: #252e38;
+$light: #ffffff;
+$white: #ffffff;
+$shade: #e6ebf6;
+$grey: #444;
+$dark:#000;
+$border: #ddd;
+
+
+$base-font: 'Roboto', sans-serif;
+$header-font: 'Roboto', sans-serif;
+
+
+// set up susy layout
+$total-columns:   12;
+$container-width: 1200px;
+
+// $debug is either "show" or "hide"
+$debug: hide;
+
+$susy: (
+  columns: $total-columns,
+  gutters: 1/6,
+  container: $container-width,
+  box-sizing: border-box,
+  math: fluid,
+
+  debug: (
+    image: $debug,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+// breakpoints
+$smaller: 500px;
+$small: 600px;
+$med-smallest: 650px;
+$med-smaller: 720px;
+$med-small: 750px;
+$medium: 800px;
+$narrow: 900px;
+$med-large: 1000px;
+$large: 1180px;
+$larger: 1280px;
+$xlarge: 1300px;
+$xxlarge: 1400px;
+$xxxlarge: 1500px;
+$wide: 1600px;
+$xwide: 1800px;
+$full: 1900px;
+
+// The amount lists and blockquotes are indented.
+$rhythm-unit: 'rem';
+$indent-amount: 40px;
+
+
+// Legacy support.
+$legacy-support-for-ie6: false;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;

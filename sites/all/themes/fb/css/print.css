@@ -1,0 +1,9 @@
+.header {display:none;}
+.main-menu {display: none;}
+.mobile-menu {display: none;}
+.right {display: none;}
+.footer-wrapper {display: none;}
+.rrssb-buttons {display: none;}
+.content {
+  display: block !important;
+}

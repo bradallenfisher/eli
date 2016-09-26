@@ -1,0 +1,104 @@
+//Header Spans and grid settings.
+.header {
+
+  .header-inner {
+    //@include container();
+
+    .logo {
+      @include span(6 of 12 last);
+
+      img {
+        float: right;
+      }
+    }
+
+    .mark {
+      @include span(6 of 12);
+    }
+
+    .menu-expander {
+      @include span(6 of 12 last);
+    }
+
+    .search-expander {
+      @include span(6 of 12);
+    }
+  }
+}
+
+.l-region--main-menu {
+  //@include container();
+}
+
+.main {
+  @include container();
+}
+
+//Just sidebar right
+.second-sidebar {
+  .content {
+    @include breakpoint($medium, true){
+      @include span(9 of 12);
+    }
+  }
+
+  .right {
+    @include breakpoint($medium, true){
+      @include span(3 of 12 last);
+    }
+  }
+}
+
+//Just sidebar left
+.first-sidebar {
+  .content {
+    @include breakpoint($medium, true){
+      @include span(9 of 12 last);
+    }
+  }
+
+  .left {
+    @include breakpoint($medium, true){
+      @include span(3 of 12);
+    }
+  }
+}
+
+//Both sidebars
+.first-sidebar.second-sidebar {
+
+  .left {
+    @include breakpoint($medium, true){
+      @include span(3 at 1 of 12 isolate);
+    }
+  }
+  .content {
+    @include breakpoint($medium, true){
+      @include span(6 at 4 of 12 isolate);
+    }
+  }
+
+  .right {
+    @include breakpoint($medium, true){
+      @include span(3 at 10 of 12 isolate);
+    }
+  }
+}
+
+//nav at top of site.
+.top-row {
+  //@include container();
+}
+
+//top news
+.view-display-id-top_features {
+
+  .views-field-field-image {
+    @include span(4 of 12);
+  }
+
+  .views-field-title {
+    @include span(8 at 5 of 12);
+  }
+}
+

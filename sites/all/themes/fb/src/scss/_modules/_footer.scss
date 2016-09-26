@@ -1,0 +1,44 @@
+.footer-wrapper {
+  background: $color-4;
+  color: $light;
+  margin-top: 75px;
+  overflow: hidden;
+
+  .footer {
+    @include container();
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+
+    .fa {
+      padding-right: 5px;
+    }
+    .between-footer {
+      margin-bottom: 25px;
+    }
+    span {
+      font-weight: 100;
+      display:block;
+      @include breakpoint($medium, true) {
+        display: inline-block;
+        border-right: 1px solid $light;
+        padding: 0 10px;
+      }
+    }
+    span.last {
+      border-right: none;
+    }
+
+    a {
+      color: $light;
+      font-weight: 100;
+
+      &:hover {
+        color: $color-3;
+      }
+    }
+  }
+}
+
+
+

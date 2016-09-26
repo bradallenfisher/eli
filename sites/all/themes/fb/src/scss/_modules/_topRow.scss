@@ -1,0 +1,141 @@
+.top-row {
+  position: relative;
+
+  .l-region--top-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .top-search-expander {
+    .hidden {
+      text-indent: -9999em;
+      outline: 0;
+      position: absolute;
+    }
+    a {
+      cursor: pointer;
+      display: none;
+
+      @include breakpoint($medium, true) {
+        color: $color-2;
+        display: block;
+        float:right;
+        font-size: 1em;
+        padding: 0 .35em;
+        font-weight: 100;
+
+        &:hover {
+          color: $color-3;
+        }
+      }
+    }
+  }
+
+  #block-psu-search-psu-search {
+    display:none;
+
+    @include breakpoint($med-large, true) {
+      display: block;
+    }
+  }
+
+  #block-psu-search-psu-search.open {
+    display: block;
+    width: 100%;
+
+    @include breakpoint($medium, true) {
+      width: inherit;
+
+    }
+  }
+
+  #psu-search-form {
+    margin-left: 0em;
+    max-width: inherit;
+    position: inherit;
+
+    @include breakpoint($medium, true) {
+      max-width: 250px;
+      z-index: 9999;
+    }
+
+    .form-type-radios {
+      position: absolute;
+    }
+  }
+
+  #block-psu-search-psu-search.block--psu-search-psu-search.open {
+    input[type="submit"] {
+      background: transparent;
+    }
+  }
+
+  #psu-search-form input[type="submit"] {
+    background-color: transparent;
+    top:10px;
+    width: 26px;
+    padding: 0.4em;
+    padding-right: 2em;
+  }
+  #psu-search-form .form-type-radios {
+    z-index: 9999;
+  }
+  input#edit-textfield.form-text {
+    color:#fff;
+  }
+
+  #psu-search-form input[type="text"] {
+    background-color: transparent;
+    color: $white;
+    width: 100%;
+    padding: 0.5em;
+    padding-right: 2em;
+  }
+
+  #block-menu-menu-header-menu {
+    display:none;
+
+    @include breakpoint ($medium, true) {
+      display: block;
+    }
+
+    ul.menu {
+      display: flex;
+
+      li {
+
+        a {
+          //background: $medium-blue;
+          border-right: 1px solid $white;
+          float: left;
+          //font-style: italic;
+          font-weight: 100;
+          margin-right: 2px;
+          padding: 0 10px;
+
+          &:link {
+            color: $color-2;
+          }
+          &:visited {
+            color: $color-2;
+          }
+          &:hover {
+            color: $color-1;
+          }
+          &:focus {
+            color: $color-2;
+          }
+
+        }
+        a.yellow {
+          color: $dark;
+          font-size: 12px;
+          font-style: normal;
+
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}

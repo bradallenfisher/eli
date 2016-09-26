@@ -1,0 +1,29 @@
+.view-feature-sidebar-tools {
+  margin-bottom: 20px;
+  .views-field-nid {
+    a {
+      background: $color-3;
+      color: $light;
+      display: block;
+      font-size: 1.2em;
+      padding: 5px 10px;
+
+      &:hover {
+        background: $color-2;
+        color: $light;
+      }
+    }
+  }
+}
+
+.block--addtoany {
+  margin-bottom: 20px;
+
+  a {
+
+    img {
+      float: left;
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+/* Tabledrag Handle */
+.tabledrag-handle {
+  float: left;
+  /* LTR */
+  overflow: hidden;
+  text-decoration: none;
+  cursor: move;
+}
+.tabledrag-handle .handle {
+  height: 30px;
+  width: 30px;
+  margin: .6em;
+  padding: .5em;
+  background: url('../images/draggable.png') no-repeat 6px 10px;
+}
+.tabledrag-handle:hover {
+  text-decoration: none;
+}
+
+.tabledrag-handle-hover .handle {
+  background-position: 6px -13px;
+}

@@ -1,0 +1,21 @@
+.simplenews-subscribe {
+  input {
+    float: none;
+    display: block;
+  }
+  .form-required {
+    display: none;
+  }
+}
+.block--simplenews {
+  margin-top: 20px;
+
+  p {
+    color: $color-1;
+    font-family: $header-font;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.3em;
+    margin: 20px 0;
+  }
+}

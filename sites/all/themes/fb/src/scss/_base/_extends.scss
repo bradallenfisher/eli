@@ -1,0 +1,28 @@
+%list-reset {
+  margin: 0; padding: 0;
+
+  li, li.leaf, li.expanded, li.collapsed {
+    margin: 0; padding: 0;
+    list-style: none;
+    list-style-image: none;
+  }
+}
+
+%responsive-video {
+  position: relative;
+  padding: 0;
+  padding-bottom: 56.25%; // 16:9
+  height: 0;
+
+  iframe, object, embed, video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+}
+
+%vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

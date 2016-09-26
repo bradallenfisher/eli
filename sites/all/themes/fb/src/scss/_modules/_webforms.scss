@@ -1,0 +1,36 @@
+.webform-client-form {
+  .webform-component label {
+    font-weight: 300;
+  }
+  @include breakpoint(600px, true) {
+    padding: 0 60px;
+  }
+
+}
+.webform-confirmation {
+  padding: 40px 0 0 40px;
+  font-weight: 100;
+  font-size: 2em;
+}
+.page-node-276 {
+  .links {
+    padding:0 0 0 40px;
+    a {
+      -webkit-font-smoothing: antialiased;
+      background-color: $color-3;
+      border: 1px solid $color-3;
+      border-radius: .3em;
+      color: #fff;
+      float: left;
+      padding: 6px 12px;
+      text-transform: uppercase;
+      width: inherit;
+
+      &:hover {
+        background-color: $color-1;
+        border: 1px solid $color-1;
+        color: $light;
+      }
+    }
+  }
+}

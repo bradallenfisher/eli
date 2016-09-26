@@ -1,0 +1,27 @@
+.main {
+
+  .content {
+    padding: 20px;
+
+    @include breakpoint($medium, true) {
+      padding: inherit;
+    }
+  }
+
+  .right {
+    padding: 20px;
+
+    @include breakpoint($medium, true) {
+      padding: inherit;
+    }
+  }
+
+  .left {
+    padding: 20px;
+
+    @include breakpoint($medium, true) {
+      padding: inherit;
+    }
+  }
+}
+

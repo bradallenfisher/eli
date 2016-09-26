@@ -1,0 +1,92 @@
+button.dl-trigger {
+  display:none;
+}
+
+.mobile-menu {
+  display: none;
+  position: relative;
+  z-index: 999;
+
+  @include breakpoint($medium, true) {
+    display: none;
+  }
+
+  .dl-menuwrapper {
+    max-width: 100%;
+    position: absolute;
+    z-index: 9999;
+  }
+
+  .dl-menuwrapper .dl-menu {
+    margin: 0;
+  }
+
+  .dl-menuwrapper button {
+    display:none;
+  }
+
+  .dl-menuwrapper button:hover,
+  .dl-menuwrapper button.dl-active,
+  .dl-menuwrapper ul {
+    background: $color-2;
+  }
+
+  .no-touch .dl-menuwrapper li a:hover {
+    background: $color-3;
+  }
+  .dl-menu li a {
+    border-top: 1px solid $light;
+  }
+  .dl-menuwrapper li > a:after {
+    color: $light;
+  }
+
+  .dl-menuwrapper li.dl-back > a {
+    background: $color-1;
+  }
+}
+.mobile-menu.open {
+  display: block;
+
+  ul.menu {
+
+    li {
+
+      a {
+        background: $color-2;
+        border-top: 1px solid $light;
+        display: block;
+        padding: 15px 20px;
+        text-transform: uppercase;
+
+        &:link {
+          color: $light;
+        }
+        &:visited {
+          color: $light;
+        }
+        &:hover {
+          background: $color-3;
+          color: $light;
+        }
+        &:focus {
+          color: $light;
+        }
+      }
+      a.yellow {
+        background: $grey;
+        color: $dark;
+
+        &:hover {
+          background: $shade;
+        }
+      }
+    }
+  }
+  @include breakpoint($medium, true) {
+    display: none;
+  }
+}
+#block-psu-search-psu-search--2 {
+  display: none;
+}

@@ -1,0 +1,117 @@
+
+* {
+  @include box-sizing(border-box);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: $base-font;
+  font-weight: 400;
+  line-height: 1.5;
+
+}
+
+a, input, button {
+  text-decoration: none;
+  &:active { outline: 0; }
+  &:focus { outline: 0; }
+  &::-moz-focus-inner { border: 0; }
+}
+
+a {
+
+  &:link {
+    color: $color-1;
+  }
+  &:visited {
+    color: $color-1;
+  }
+  &:hover {
+    color: $color-1;
+  }
+  &:focus {
+    color: $color-1;
+  }
+}
+
+h1 {
+  font-size: 4vw;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.5rem
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+iframe, object, embed {
+  max-width: 100%;
+}
+
+.l-region--sidebar-second iframe {
+  width: 100% !important;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  //margin: 0 auto;
+}
+
+.admin-menu-search {
+  input {
+    height: inherit !important;
+  }
+}
+input[type=submit], button {
+  -webkit-font-smoothing: antialiased;
+  background-color: $color-3;
+  border: 1px solid $color-3;
+  border-radius: .3em;
+  color: #fff;
+  float: left;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  width: inherit;
+
+  &:hover {
+    background-color: $color-1;
+    border: 1px solid $color-1;
+    color: $light;
+  }
+}
+
+em {
+  font-style: italic;
+}
+.form-item label, .form-actions label {
+    display: block;
+    font-weight: 300;
+    font-size: 1.3em;
+}

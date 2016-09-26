@@ -1,0 +1,29 @@
+.search-form {
+  .form-item label, .form-actions label {
+    display: block;
+    font-weight: 100;
+    font-size: 2em;
+  }
+
+  input[type=text] {
+    width: 70% !important;
+    padding: 10px;
+
+  }
+  input[type=submit], button {
+    -webkit-font-smoothing: antialiased;
+    background-color: $color-3;
+    border: 1px solid $color-3;
+    color: $white;
+    float: none;
+    padding: 20px;
+    text-transform: uppercase;
+    width: inherit;
+  }
+  .search-advanced {
+    display: none;
+  }
+  input#edit-keys[type=text] {
+    padding: 20px;
+  }
+}

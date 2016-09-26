@@ -1,0 +1,184 @@
+.header {
+  background: $white;
+
+
+  .header-inner {
+    @include breakpoint($medium, true) {
+      padding: 0 20px;
+
+    }
+
+    .brand {
+      clear: both;
+      height: 130px;
+      overflow: hidden;
+      position: relative;
+
+      @include breakpoint($medium, true) {
+        height: 100px;
+      }
+    }
+
+    .toggle-wrap {
+      overflow: hidden;
+    }
+
+    .logo {
+      color: $light;
+      font-size: 2em;
+      line-height: 1em;
+      text-align: center;
+
+     @include breakpoint($small, true) {
+        width: auto;
+      }
+
+      p {
+        display: table-cell;
+        height: 100px;
+        vertical-align: middle;
+
+        @include breakpoint($narrow, true) {
+          height: 140px;
+        }
+
+        a {
+          color: $light;
+        }
+      }
+    }
+
+    .menu-expander {
+      background-color: $color-2;
+      color: $light;
+      display: block;
+      font-size: 1.3em;
+      height: 50px;
+      padding: 10px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include breakpoint($medium, true) {
+        display: none;
+      }
+
+      .fa {
+        padding-left: 5px;
+      }
+    }
+
+
+    .search-expander {
+      a {
+        color: $light;
+      }
+      background-color: $color-2;
+
+      display: block;
+      font-size: 1.3em;
+      height: 50px;
+      margin-right: 2px;
+      padding: 10px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include breakpoint($medium, true) {
+        display: none;
+      }
+
+      .fa {
+        padding-left: 5px;
+      }
+    }
+
+    .mark {
+      margin: 10px 0 10px 0;
+      max-width: 316px;
+
+      a {
+        height: 130px;
+      }
+
+      img {
+        display: inherit;
+        width: 316px;
+      }
+    }
+
+    // Tier 2 Header
+
+    .mark {
+      margin: 0 0 20px 0;
+      max-width: 216px;
+      padding:  10px;
+      @include breakpoint (800px, true) {
+        float: left;
+        padding: 0;
+      }
+
+      img {
+        width: 216px;
+      }
+    }
+
+    .dept-name-left {
+      position: absolute;
+      left: 70px;
+      top: 50px;
+      padding-right: 15px;
+
+      @include breakpoint (500px, true) {
+        left: 75px;
+        top: 50px;
+      }
+      @include breakpoint (800px, true) {
+        left: 75px;
+        top: 40px;
+      }
+
+      img {
+        width: 300px;
+      }
+    }
+    .dept-name-right {
+      text-align: center;
+      font-size: 1em;
+      position: absolute;
+      top: 90px;
+      left: 80px;
+
+
+      @include breakpoint (800px, true) {
+        float: right;
+        margin-top: 25px;
+        position: relative;
+        top:  inherit;
+        left: inherit;
+        font-size: 2em;
+        font-weight: 100;
+
+      }
+
+      @include breakpoint (1000px, true) {
+
+        max-width: 500px;
+      }
+
+      a {
+        display: block;
+        color: $dark  ;
+      }
+    }
+  }
+}
+a span.circle {
+  border-radius: 50%;
+  background: $color-3;
+  padding: 10px;
+  margin-right: 10px;
+  color: $white;
+
+  &:hover {
+    background: $color-2;
+  }
+}

@@ -1,0 +1,68 @@
+ .main{
+      table {
+        font-size: .9em;
+        color: #333333;
+        border-width: 1px;
+        border-color: #3A3A3A;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+    table caption {
+      font-weight: bold;
+      font-size: 1.4em;
+      background: $color-1;
+      color: $light;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+    table th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: $color-1;
+        background-color: $color-3;
+        color: #ffffff;
+        vertical-align: middle;
+        position: relative;
+
+        a {
+          img {
+            position: absolute;
+            right: 5px;
+            bottom:15px;
+          }
+        }
+    }
+    table th[scope=col] {
+      text-align: center;
+      font-weight: bold;
+    }
+    table th[scope=row] {
+      text-align: left;
+      font-weight: bold;
+    }
+    table tr:hover td {
+        cursor: pointer;
+    }
+    table tr:nth-child(even) td{
+        background-color: #e7f7ff;
+    }
+    table td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: $color-3;
+        background-color: #ffffff;
+    }
+    table th {
+      a {
+        color: $light;
+      }
+    }
+}
+
+.footer {
+  table td {
+    vertical-align: top;
+  }
+}

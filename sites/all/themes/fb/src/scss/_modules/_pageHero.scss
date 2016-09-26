@@ -1,0 +1,47 @@
+.view-page-image-from-node {
+  .views-field-title h1 {
+    color: $white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1em;
+    background: $color-3;
+    text-transform: uppercase;
+    font-weight: 100;
+    @include breakpoint(700px, true) {
+      position: absolute;
+      bottom: 20px;
+      left: 0%;
+      margin:0;
+      padding: 5px 30px 5px 30px;
+      font-size: 4vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+.view-home-page-hero {
+  .views-row h1 {
+    color: $white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1em;
+    background: $color-3;
+    text-transform: uppercase;
+    font-weight: 100;
+    @include breakpoint(700px, true) {
+      position: absolute;
+      bottom: 20px;
+      left: 0%;
+      margin:0;
+      padding: 5px 30px 5px 30px;
+      font-size: 4vw;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+.page-image {
+  position: relative;
+}

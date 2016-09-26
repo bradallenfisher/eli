@@ -1,0 +1,38 @@
+/* quick links (top right-hand corner of all pages) */
+
+.block--menu-menu-quick-links-menu {
+  margin-bottom: 20px;
+
+  .block__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  ul.menu {
+
+    li {
+      a {
+        border-bottom: 1px solid $border;
+        display: block;
+        font-size: .9em;
+        padding: 10px;
+
+        &:link {
+          color: $color-1;
+        }
+        &:visited {
+          color: $color-1;
+        }
+        &:hover {
+          background: $color-3;
+          color:$light;
+        }
+        &:focus {
+          color: $color-1;
+        }
+      }
+    }
+  }
+}
