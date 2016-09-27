@@ -55,12 +55,16 @@
     <?php print render($page['page_image']);?>
   </div>
 
+  <div class="row">
+    <?php print render($page['callout']);?>
+  </div>
+
   <div class="main">
     <div class="content" role="main">
 
-      <?php if($page['callout']):?>
-        <div class="callout">
-          <?php print render($page['callout']);?>
+      <?php if($page['team']):?>
+        <div class="team">
+          <?php print render($page['team']);?>
         </div>
       <?php endif;?>
 

@@ -1,0 +1,110 @@
+#block-views-team-block {
+  .block__title {
+    font-size: 4vw;
+    font-weight: 100;
+  }
+
+  img {
+  }
+
+  .view-content {
+    display: flex;
+    flex-flow:wrap;
+    justify-content: space-between;
+
+    .views-row {
+      clear:both;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+
+      @include breakpoint(450px, true) {
+        width: 49%;
+      }
+
+      @include breakpoint(1180px, true){
+        width: 25%;
+      }
+    }
+  }
+}
+.team-member-profile {
+  position: relative;
+}
+.team-member-profile a img {
+  border: 5px solid $shade;
+  padding: .55rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.profile-info-reveal {
+  border-radius: 50%;
+  background: rgba($color-2, 0.8);
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3.75em 3em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  transition: 0.6s;
+}
+.profile-info-reveal:hover { opacity: 1; }
+.profile-info-reveal:after,
+.profile-info-reveal:before {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+
+.profile-info-reveal:before {
+  border-bottom: none;
+  border-top: none;
+  left: 2em;
+  right: 2em;
+}
+
+
+.profile-info-reveal:after {
+  border-left: none;
+  border-right: none;
+  bottom: 2em;
+  top: 2em;
+}
+
+.profile-info-reveal:hover:after,
+.profile-info-reveal:hover:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.profile-name {
+  font-size: 2vw;
+  font-weight: 100;
+  text-shadow: 1px 1px $dark;
+}
+.profile-jobtitle {
+  font-size: 1.1vw;
+  font-weight: 100;
+
+}

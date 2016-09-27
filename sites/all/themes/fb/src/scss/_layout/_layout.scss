@@ -25,7 +25,9 @@
     }
   }
 }
-
+.l-region--callout {
+  @include container();
+}
 .l-region--main-menu {
   //@include container();
 }

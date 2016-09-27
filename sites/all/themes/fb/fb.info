@@ -33,6 +33,7 @@ regions[highlighted] = Highlighted
 regions[help] = Help
 regions[page_image] = Page Image
 regions[callout] = Callout
+regions[team] = Team
 regions[quick_links] = Quick Links
 regions[row_1_left_block] = Row 1 Left Block
 regions[row_1_right_block] = Row 1 Right Block
