@@ -43,12 +43,17 @@
     }
 
     ol {
-      list-style: decimal;
+      list-style: square;
       margin: 20px 40px;
       font-weight: 300;
     }
     ul {
-      list-style: circle;
+      list-style: square;
+      margin: 5px 40px 20px;
+      font-weight: 300;
+    }
+    li {
+      list-style: square;
       margin: 5px 40px 20px;
       font-weight: 300;
     }

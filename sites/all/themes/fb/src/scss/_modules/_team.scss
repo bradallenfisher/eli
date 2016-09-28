@@ -3,7 +3,6 @@
     font-size: 4vw;
     font-weight: 100;
   }
-
   img {
   }
 
@@ -106,5 +105,34 @@
 .profile-jobtitle {
   font-size: 1.1vw;
   font-weight: 100;
+}
+// Team Member Landing Page
+.node-type-team {
 
+  .node__content {
+    line-height: 2;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .field--type-image {
+    text-align: center;
+
+    img {
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+
+  .field--name-body {
+    @include container();
+
+    @include breakpoint($medium, true) {
+      max-width: 60%;
+    }
+  }
+  .field--name-field-title {
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
 }

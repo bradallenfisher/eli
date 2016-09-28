@@ -1240,11 +1240,15 @@ a span.circle {
       .node__content .field--name-body {
         padding: 30px 60px; } }
     .node__content .field--name-body ol {
-      list-style: decimal;
+      list-style: square;
       margin: 20px 40px;
       font-weight: 300; }
     .node__content .field--name-body ul {
-      list-style: circle;
+      list-style: square;
+      margin: 5px 40px 20px;
+      font-weight: 300; }
+    .node__content .field--name-body li {
+      list-style: square;
       margin: 5px 40px 20px;
       font-weight: 300; }
   .node__content .body-title-wrapper {
@@ -1460,7 +1464,7 @@ a span.circle {
   padding: 8px;
   border-style: solid;
   border-color: #de462e;
-  background-color: #de462e;
+  background-color: #4796d6;
   color: #ffffff;
   vertical-align: middle;
   position: relative; }
@@ -1470,12 +1474,18 @@ a span.circle {
     bottom: 15px; }
 
 .main table th[scope=col] {
-  text-align: center;
-  font-weight: bold; }
+  text-align: left; }
+  .main table th[scope=col] p {
+    font-size: 2rem;
+    font-weight: 100 !important;
+    margin-bottom: 0; }
 
 .main table th[scope=row] {
-  text-align: left;
-  font-weight: bold; }
+  text-align: left; }
+  .main table th[scope=row] p {
+    font-size: 2rem;
+    font-weight: 100 !important;
+    margin-bottom: 0; }
 
 .main table tr:hover td {
   cursor: pointer; }
@@ -1600,6 +1610,34 @@ a span.circle {
 .profile-jobtitle {
   font-size: 1.1vw;
   font-weight: 100; }
+
+.node-type-team .node__content {
+  line-height: 2;
+  font-size: 1.2rem;
+  text-align: center; }
+
+.node-type-team .field--type-image {
+  text-align: center; }
+  .node-type-team .field--type-image img {
+    border-radius: 50%;
+    display: inline-block; }
+
+.node-type-team .field--name-body {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .node-type-team .field--name-body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  @media (min-width: 800px) {
+    .node-type-team .field--name-body {
+      max-width: 60%; } }
+
+.node-type-team .field--name-field-title {
+  font-weight: 100;
+  font-size: 1.5rem; }
 
 a.simpleButton {
   background: #007dc3;
