@@ -3,17 +3,19 @@
   color: $white;
 }
 .l-region--callout {
+  padding: 40px;
+  font-weight: 100;
 
   a.button {
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     background-color: $color-4;
     border: 1px solid $color-4;
-    border-radius: .3em;
     color: #fff;
     margin: 20px 0;
     display: inline-block;
     padding: 6px 12px;
+    text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     width: inherit;

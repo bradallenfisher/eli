@@ -55,9 +55,11 @@
     <?php print render($page['page_image']);?>
   </div>
 
-  <div class="row">
-    <?php print render($page['callout']);?>
-  </div>
+  <?php if($page['callout']):?>
+	  <div class="row">
+	    <?php print render($page['callout']);?>
+	  </div>
+  <?php endif;?>
 
   <div class="main">
     <div class="content" role="main">
