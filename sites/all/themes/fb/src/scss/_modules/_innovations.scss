@@ -1,0 +1,105 @@
+#block-views-innovations-block {
+  .views-row {
+    clear:both;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .block__title {
+    font-size: 3em;
+    font-weight: 100;
+    color: $color-2;
+    padding: 20px;
+    @include breakpoint(800px, true) {
+      font-size: 4vw;
+
+    }
+  }
+  .views-field-field-image {
+    text-align: center;
+  }
+  img {
+    border-radius: 50%;
+    border: 10px solid $color-1;
+    padding: 10px;
+    display: inline;
+    text-align: center;
+    @include breakpoint(800px, true) {
+      float: left;
+      margin-right: 20px;
+      display: block;
+      text-align: left;
+    }
+  }
+  .views-field-title {
+    a {
+      font-weight: 100;
+      color: $color-3;
+      font-size: 1.8em;
+      @include breakpoint(800px, true) {
+        font-size: 2.2em;
+      }
+    }
+  }
+  .views-field-body {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+}
+// Innovate Landing Page
+.node-type-innovation {
+
+  .node__content {
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+
+  .field--type-image {
+    margin-top: 20px;
+
+    img {
+      border: none;
+    }
+  }
+
+  .field--name-body {
+    @include container();
+
+  }
+  .field--name-field-title {
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+}
+
+#block-views-innovations-block-1 {
+  .block__title {
+    font-size: 4vw;
+    font-weight: 100;
+    color: $color-2;
+  }
+  .views-field-title {
+    a {
+      display: block;
+      font-size: 1.1em;
+      margin:1px;
+      padding: 5px;
+      &:link {
+
+        background: $color-2;
+        color: $white;
+      }
+      &:visited {
+        background: $color-2;
+        color: $white;
+      }
+      &:hover {
+        background: $color-1;
+        color: $white;
+      }
+      &:focus {
+        background: $color-1;
+        color: $white;
+      }
+    }
+  }
+}
