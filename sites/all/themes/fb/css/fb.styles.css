@@ -1395,28 +1395,101 @@ a span.circle {
   font-weight: 100;
   font-size: 1.5rem; }
 
+#block-views-posts-block .views-row {
+  clear: both;
+  overflow: hidden; }
+
 #block-views-posts-block .block__title {
-  font-size: 4vw;
+  font-size: 3em;
   font-weight: 100;
-  color: #2988bc; }
+  color: #2988bc;
+  padding: 20px; }
+  @media (min-width: 800px) {
+    #block-views-posts-block .block__title {
+      font-size: 2vw; } }
+
+#block-views-posts-block .more-link a {
+  padding: 10px;
+  display: block; }
+  #block-views-posts-block .more-link a:link {
+    color: #2988bc; }
+  #block-views-posts-block .more-link a:visited {
+    color: #2988bc; }
+  #block-views-posts-block .more-link a:hover {
+    color: #1b4b5a; }
+  #block-views-posts-block .more-link a:focus {
+    color: #1b4b5a; }
 
 #block-views-posts-block .views-field-title a {
+  border-bottom: 1px solid #eee;
   display: block;
   font-size: 1.1em;
   margin: 1px;
   padding: 5px; }
   #block-views-posts-block .views-field-title a:link {
-    background: #2988bc;
-    color: #ffffff; }
+    color: #e4535e; }
   #block-views-posts-block .views-field-title a:visited {
-    background: #2988bc;
-    color: #ffffff; }
+    color: #e4535e; }
   #block-views-posts-block .views-field-title a:hover {
-    background: #e4535e;
-    color: #ffffff; }
+    color: #1b4b5a; }
   #block-views-posts-block .views-field-title a:focus {
-    background: #e4535e;
-    color: #ffffff; }
+    color: #1b4b5a; }
+
+#block-views-post-sidebar-links-block .views-row, #block-views-post-sidebar-links-block-1 .views-row, #block-views-post-sidebar-links-block-2 .views-row {
+  clear: both;
+  overflow: hidden; }
+
+#block-views-post-sidebar-links-block .block__title, #block-views-post-sidebar-links-block-1 .block__title, #block-views-post-sidebar-links-block-2 .block__title {
+  font-size: 3em;
+  font-weight: 100;
+  color: #2988bc;
+  padding: 20px; }
+  @media (min-width: 800px) {
+    #block-views-post-sidebar-links-block .block__title, #block-views-post-sidebar-links-block-1 .block__title, #block-views-post-sidebar-links-block-2 .block__title {
+      font-size: 2vw; } }
+
+#block-views-post-sidebar-links-block .views-field-title a, #block-views-post-sidebar-links-block-1 .views-field-title a, #block-views-post-sidebar-links-block-2 .views-field-title a {
+  border-bottom: 1px solid #eee;
+  display: block;
+  font-size: 1.1em;
+  margin: 1px;
+  padding: 5px; }
+  #block-views-post-sidebar-links-block .views-field-title a:link, #block-views-post-sidebar-links-block-1 .views-field-title a:link, #block-views-post-sidebar-links-block-2 .views-field-title a:link {
+    color: #e4535e; }
+  #block-views-post-sidebar-links-block .views-field-title a:visited, #block-views-post-sidebar-links-block-1 .views-field-title a:visited, #block-views-post-sidebar-links-block-2 .views-field-title a:visited {
+    color: #e4535e; }
+  #block-views-post-sidebar-links-block .views-field-title a:hover, #block-views-post-sidebar-links-block-1 .views-field-title a:hover, #block-views-post-sidebar-links-block-2 .views-field-title a:hover {
+    color: #1b4b5a; }
+  #block-views-post-sidebar-links-block .views-field-title a:focus, #block-views-post-sidebar-links-block-1 .views-field-title a:focus, #block-views-post-sidebar-links-block-2 .views-field-title a:focus {
+    color: #1b4b5a; }
+
+#block-views-post-sidebar-links-block-3 .views-row {
+  clear: both;
+  overflow: hidden; }
+
+#block-views-post-sidebar-links-block-3 .block__title {
+  font-size: 3em;
+  font-weight: 100;
+  color: #2988bc;
+  padding: 20px; }
+  @media (min-width: 800px) {
+    #block-views-post-sidebar-links-block-3 .block__title {
+      font-size: 2vw; } }
+
+#block-views-post-sidebar-links-block-3 .views-field-title a {
+  border-bottom: 1px solid #eee;
+  display: block;
+  font-size: 1.1em;
+  margin: 1px;
+  padding: 5px; }
+  #block-views-post-sidebar-links-block-3 .views-field-title a:link {
+    color: #2988bc; }
+  #block-views-post-sidebar-links-block-3 .views-field-title a:visited {
+    color: #2988bc; }
+  #block-views-post-sidebar-links-block-3 .views-field-title a:hover {
+    color: #1b4b5a; }
+  #block-views-post-sidebar-links-block-3 .views-field-title a:focus {
+    color: #1b4b5a; }
 
 .view-feature-sidebar-tools {
   margin-bottom: 20px; }

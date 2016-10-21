@@ -72,33 +72,137 @@
 }
 
 #block-views-posts-block {
+  .views-row {
+    clear:both;
+    overflow: hidden;
+  }
   .block__title {
-    font-size: 4vw;
+    font-size: 3em;
     font-weight: 100;
     color: $color-2;
+    padding: 20px;
+    @include breakpoint(800px, true) {
+      font-size: 2vw;
+
+    }
   }
+.more-link {
+      a {
+        padding: 10px;
+        display: block;
+      &:link {
+        color: $color-2;
+      }
+      &:visited {
+
+        color: $color-2;
+      }
+      &:hover {
+        color: $color-4;
+      }
+      &:focus {
+        color: $color-4;
+      }
+      }
+    }
   .views-field-title {
+
     a {
+      border-bottom: 1px solid #eee;
       display: block;
       font-size: 1.1em;
       margin:1px;
       padding: 5px;
       &:link {
-
-        background: $color-2;
-        color: $white;
+        color: $color-3;
       }
       &:visited {
-        background: $color-2;
-        color: $white;
+
+        color: $color-3;
       }
       &:hover {
-        background: $color-1;
-        color: $white;
+        color: $color-4;
       }
       &:focus {
-        background: $color-1;
-        color: $white;
+        color: $color-4;
+      }
+    }
+  }
+}
+
+#block-views-post-sidebar-links-block, #block-views-post-sidebar-links-block-1, #block-views-post-sidebar-links-block-2 {
+  .views-row {
+    clear:both;
+    overflow: hidden;
+  }
+  .block__title {
+    font-size: 3em;
+    font-weight: 100;
+    color: $color-2;
+    padding: 20px;
+    @include breakpoint(800px, true) {
+      font-size: 2vw;
+
+    }
+  }
+  .views-field-title {
+    a {
+      border-bottom: 1px solid #eee;
+      display: block;
+      font-size: 1.1em;
+      margin:1px;
+      padding: 5px;
+      &:link {
+        color: $color-3;
+      }
+      &:visited {
+
+        color: $color-3;
+      }
+      &:hover {
+        color: $color-4;
+      }
+      &:focus {
+        color: $color-4;
+      }
+    }
+  }
+}
+
+ #block-views-post-sidebar-links-block-3  {
+   .views-row {
+    clear:both;
+    overflow: hidden;
+  }
+  .block__title {
+    font-size: 3em;
+    font-weight: 100;
+    color: $color-2;
+    padding: 20px;
+    @include breakpoint(800px, true) {
+      font-size: 2vw;
+
+    }
+  }
+  .views-field-title {
+    a {
+      border-bottom: 1px solid #eee;
+      display: block;
+      font-size: 1.1em;
+      margin:1px;
+      padding: 5px;
+      &:link {
+        color: $color-2;
+      }
+      &:visited {
+
+        color: $color-2;
+      }
+      &:hover {
+        color: $color-4;
+      }
+      &:focus {
+        color: $color-4;
       }
     }
   }
