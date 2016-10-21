@@ -1,0 +1,43 @@
+#block-views-programs-block {
+  .views-row {
+    clear:both;
+    overflow: hidden;
+  }
+  .block__title {
+    font-size: 3em;
+    font-weight: 100;
+    color: $color-2;
+    padding: 20px 0;
+    @include breakpoint(800px, true) {
+      font-size: 4vw;
+
+    }
+  }
+  .views-field-field-link {
+    a {
+      font-weight: 100;
+      color: $color-3;
+      font-size: 1.8em;
+      @include breakpoint(800px, true) {
+        font-size: 2.2em;
+      }
+    }
+  }
+
+  .views-field-title {
+    font-weight: 100;
+    color: $color-3;
+    font-size: 1.8em;
+    @include breakpoint(800px, true) {
+      font-size: 2.2em;
+    }
+    a {
+      font-weight: 100;
+      color: $color-3;
+      font-size: 1.8em;
+      @include breakpoint(800px, true) {
+        font-size: 2.2em;
+      }
+    }
+  }
+}
