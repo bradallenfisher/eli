@@ -7,9 +7,6 @@
       <?php // search and top links ?>
 
       <span class="top-search-expander">
-        <a><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-        <a><i class="fa fa-github-square" aria-hidden="true"></i></a>
         <a href="/search">Search <i class="fa fa-search"></i></a>
       </span>
       <?php print render($page['top_row']);?>
