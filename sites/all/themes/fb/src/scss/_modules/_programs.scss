@@ -2,6 +2,9 @@
   .views-row {
     clear:both;
     overflow: hidden;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
   }
   .block__title {
     font-size: 3em;
@@ -13,13 +16,26 @@
 
     }
   }
+  .views-field-body {
+    padding: 20px;
+  }
   .views-field-field-link {
     a {
       font-weight: 100;
       color: $color-2;
-      font-size: 1.8em;
+      background: $white;
+      font-size: 1.4rem;
+      margin-left: 20px;
+      margin-top: 10px;
+      padding: 5px;
+      display: inline-block;
+      border: 1px solid $color-2;
+      &:hover {
+        color:$white;
+        background: $color-2;
+      }
       @include breakpoint(800px, true) {
-        font-size: 2.2em;
+        font-size: 1.6rem;
       }
     }
   }
@@ -29,14 +45,14 @@
     color: $color-3;
     font-size: 1.8em;
     @include breakpoint(800px, true) {
-      font-size: 2.2em;
+      font-size: 2.2rem;
     }
     a {
       font-weight: 100;
       color: $color-3;
-      font-size: 1.8em;
+      font-size: 1.8rem;
       @include breakpoint(800px, true) {
-        font-size: 2.2em;
+        font-size: 2.2rem;
       }
     }
   }

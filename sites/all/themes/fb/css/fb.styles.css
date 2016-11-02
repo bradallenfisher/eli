@@ -1511,7 +1511,9 @@ a span.circle {
 
 #block-views-programs-block .views-row {
   clear: both;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 20px;
+  padding-bottom: 20px; }
 
 #block-views-programs-block .block__title {
   font-size: 3em;
@@ -1522,13 +1524,25 @@ a span.circle {
     #block-views-programs-block .block__title {
       font-size: 4vw; } }
 
+#block-views-programs-block .views-field-body {
+  padding: 20px; }
+
 #block-views-programs-block .views-field-field-link a {
   font-weight: 100;
   color: #2988bc;
-  font-size: 1.8em; }
+  background: #ffffff;
+  font-size: 1.4rem;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  display: inline-block;
+  border: 1px solid #2988bc; }
+  #block-views-programs-block .views-field-field-link a:hover {
+    color: #ffffff;
+    background: #2988bc; }
   @media (min-width: 800px) {
     #block-views-programs-block .views-field-field-link a {
-      font-size: 2.2em; } }
+      font-size: 1.6rem; } }
 
 #block-views-programs-block .views-field-title {
   font-weight: 100;
@@ -1536,14 +1550,14 @@ a span.circle {
   font-size: 1.8em; }
   @media (min-width: 800px) {
     #block-views-programs-block .views-field-title {
-      font-size: 2.2em; } }
+      font-size: 2.2rem; } }
   #block-views-programs-block .views-field-title a {
     font-weight: 100;
     color: #e4535e;
-    font-size: 1.8em; }
+    font-size: 1.8rem; }
     @media (min-width: 800px) {
       #block-views-programs-block .views-field-title a {
-        font-size: 2.2em; } }
+        font-size: 2.2rem; } }
 
 /* quick links (top right-hand corner of all pages) */
 .block--menu-menu-quick-links-menu {
